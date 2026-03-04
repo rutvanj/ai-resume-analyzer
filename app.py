@@ -1,4 +1,4 @@
-
+import os
 from flask import Flask, render_template, request
 from resume_checker import analyze_resume
 
