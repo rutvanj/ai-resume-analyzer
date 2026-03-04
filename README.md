@@ -1,36 +1,107 @@
-# AI Resume Analyzer
+AI Resume Analyzer
 
-AI-powered tool that analyzes resumes against job descriptions and provides ATS scoring, skill detection, and improvement suggestions.
+AI Resume Analyzer is a web application that evaluates resumes against job descriptions to help candidates improve their chances of passing Applicant Tracking Systems (ATS).
 
-## Features
+It analyzes resume content, detects relevant skills, highlights missing skills, and provides actionable improvement suggestions.
 
-• Resume ATS scoring
-• Job description matching
-• Skill detection
-• Missing skills analysis
-• Skill radar visualization
-• Resume improvement suggestions
-• PDF and image resume upload with OCR
 
-## Tech Stack
 
-* Python
-* Flask
-* HTML / CSS
-* Chart.js
-* PDFPlumber
-* Tesseract OCR
+Live Demo
 
-## Run Locally
+The application is deployed on Render.
 
-Install dependencies
+Live Application:
+https://ai-resume-analyzer-ugm0.onrender.com
+
+
+
+Features
+
+- ATS-style resume scoring
+- Job description matching
+- Automatic skill detection
+- Missing skills analysis
+- Skill radar chart visualization
+- Resume improvement suggestions
+- Resume upload support (PDF / image)
+- OCR-based text extraction for scanned resumes
+
+
+
+Tech Stack
+
+Backend
+
+- Python
+- Flask
+
+Frontend
+
+- HTML
+- CSS
+- Chart.js
+
+Resume Processing
+
+- pdfplumber
+- Tesseract OCR
+- Pillow
+
+Deployment
+
+- Render (Cloud Hosting)
+- GitHub (Version Control)
+
+
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/rutvanj/ai-resume-analyzer.git
+cd ai-resume-analyzer
+
+Install dependencies:
 
 pip install flask pdfplumber pillow pytesseract
 
-Run the app
+
+
+Running the Application Locally
+
+Start the Flask server:
 
 python app.py
 
-Open browser
+Open your browser and go to:
 
 http://127.0.0.1:5000
+
+
+
+Deployment
+
+The backend is deployed on Render.
+Render automatically redeploys the application when new code is pushed to GitHub.
+
+The Flask server runs using:
+
+app.run(host="0.0.0.0", port=os.environ.get("PORT",10000))
+
+
+
+Future Improvements
+
+- AI-based resume rewriting
+- ATS keyword optimization
+- NLP-based resume scoring
+- Job recommendation engine
+- LinkedIn profile analysis
+
+
+
+Author
+
+Rutva Jakhiya
+B.Tech Information Technology
+A. D. Patel Institute of Technology
